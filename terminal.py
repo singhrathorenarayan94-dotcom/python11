@@ -1,15 +1,21 @@
-while True:
-    cmd = input("MyTerminal> ")
+from datetime import datetime
 
-    if cmd == "hello":
-        print("Hello User!")
+try:
+    while True:
+        cmd = input("MyTerminal> ")
 
-    elif cmd == "time":
-        from datetime import datetime
-        print(datetime.now())
+        if cmd == "hello":
+            print("Hello User!")
 
-    elif cmd == "exit":
-        break
+        elif cmd == "time":
+            print(datetime.now())
 
-    else:
-        print("Unknown command")
+        elif cmd == "exit":
+            print("Exiting...")
+            break
+
+        else:
+            print("Unknown command")
+
+except KeyboardInterrupt:
+    print("\nKeyboard Interrupt detected. Exiting safely...")
