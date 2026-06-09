@@ -19,3 +19,5 @@ try:
 
 except KeyboardInterrupt:
     print("\nKeyboard Interrupt detected. Exiting safely...")
+
+print("end")
